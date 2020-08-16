@@ -1,10 +1,19 @@
 import React from  'react';
+import { FaArrowLeft } from 'react-icons/fa'
+import { Link } from 'react-router-dom';
+
 import { Container } from './styles';
 
 export default function FormBook({ title, buttonName}) {
     return (
-        <Container> 
-            <h1 className="form-title">{title}</h1>
+        <Container>
+
+            <div className="form-top">
+                <h1 className="form-title">{title}</h1>
+                <Link to="/">
+                    <FaArrowLeft color="#2A273A" size={26} />
+                </Link>
+            </div>
 
             <label htmlFor="">Título</label>
             <input 
