@@ -8,6 +8,7 @@ function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route path='/books' component= { FormBook } />
+                {/* <Route path='/books' render={(props) => <FormBook {...props} title="Titulo teste" buttonName="Salvar" /> } /> */}
             </Switch>
         </BrowserRouter>
     );
