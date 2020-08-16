@@ -12,9 +12,15 @@ export const Container = styled.div`
     transition: .25s all;
     background-color: #fff;
     
-    h1 {
-        margin-bottom: 1.8rem;
-        color: #2A273A;
+    .form-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            margin-bottom: 1.8rem;
+            color: #2A273A;
+        }
     }
 
     label {
@@ -42,7 +48,7 @@ export const Container = styled.div`
         background: #03005c;
         color: #fff;
         border-radius: 4px;
-        padding: .75rem 2rem;
+        padding: .9rem 2rem;
         transition: .25s all;
         text-transform: uppercase;
         border: none;
