@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import FormBook  from '../pages/FormBook';
+import RegisterBook from '../pages/RegisterBook';
+import EditBook from '../pages/EditBook';
 
 
 function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path='/books' component= { FormBook } />
-                {/* <Route path='/books' render={(props) => <FormBook {...props} title="Titulo teste" buttonName="Salvar" /> } /> */}
+                <Route path='/books/create' exact component= { RegisterBook } />
+                <Route path='/books/edit' exact component= { EditBook } />
+
             </Switch>
         </BrowserRouter>
     );
