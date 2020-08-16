@@ -14,6 +14,10 @@ export const Global = createGlobalStyle`
         height: 100%;
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     button {
@@ -23,6 +27,5 @@ export const Global = createGlobalStyle`
     ul {
         list-style: none;
     }
-
 
 `;

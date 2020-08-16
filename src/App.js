@@ -1,12 +1,12 @@
 import React from 'react';
 
-import FormBook from './pages/FormBook';
 import { Global } from './styles/Global';
+import Routes from './Routes';
 
 function App() {
   return (
     <>
-      <FormBook />
+      <Routes />
       <Global />
     </>
   );
