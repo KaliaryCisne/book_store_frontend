@@ -1,43 +1,49 @@
 import React from  'react';
 import { Container } from './styles';
 
-export default function FormBook() {
+export default function FormBook({ title, buttonName}) {
     return (
         <Container> 
-            <h1 className="form-title">Register a book</h1>
-            <label htmlFor="">Title</label>
+            <h1 className="form-title">{title}</h1>
+
+            <label htmlFor="">Título</label>
             <input 
                 type="text"
-                placeholder="Title"
+                placeholder="Título"
                 id=""
             />
-            <label htmlFor="">Gender</label>
+
+            <label htmlFor="">Gênero</label>
             <input 
                 type="text"
-                placeholder="Gender"
-            />
-            <label htmlFor="">Description</label>
-            <input 
-                type="text"
-                placeholder="Description"
-            />
-            <label htmlFor="">Image</label>
-            <input 
-                type="text"
-                placeholder="Image"
-            />
-            <label htmlFor="">Author</label>
-            <input 
-                type="text"
-                placeholder="Author"
-            />
-            <label htmlFor="">Year</label>
-            <input 
-                type="text"
-                placeholder="Year"
+                placeholder="Gênero"
             />
 
-            <button type="button">Save</button>  
+            <label htmlFor="">Descrição</label>
+            <input 
+                type="text"
+                placeholder="Descrição"
+            />
+
+            <label htmlFor="">Imagem</label>
+            <input 
+                type="text"
+                placeholder="Imagem"
+            />
+
+            <label htmlFor="">Autor</label>
+            <input 
+                type="text"
+                placeholder="Autor"
+            />
+
+            <label htmlFor="">Ano de lançamento</label>
+            <input 
+                type="text"
+                placeholder="Ano de lançamento"
+            />
+
+            <button type="button">{buttonName}</button>  
             
         </Container>
     );
