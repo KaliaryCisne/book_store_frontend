@@ -7,6 +7,7 @@ export const Global = createGlobalStyle`
         padding: 0;
         outline: none;
         box-sizing: border-box;
+        text-decoration: none;
     }
     
     body, html {
@@ -18,6 +19,10 @@ export const Global = createGlobalStyle`
         justify-content: center;
         align-items: center;
         width: 100%;
+    }
+
+    body {
+        padding-top: 150px;
     }
 
     button {

@@ -8,44 +8,48 @@ export default function FormBook() {
     return (
         <Container> 
             <div className="form-top">
-                <h1 className="form-title">Register a book</h1>
+                <h1 className="form-title">Cadastrar um novo livro</h1>
                 <Link to="/">
                     <FaArrowLeft color="#2A273A" size={26} />
                 </Link>
             </div>
-            <label htmlFor="">Title</label>
+            <label htmlFor="title">Título</label>
             <input 
                 type="text"
-                placeholder="Title"
-                id=""
+                placeholder="Titulo"
+                id="title"
             />
-            <label htmlFor="">Gender</label>
+            <label htmlFor="gender">Genêro</label>
             <input 
                 type="text"
-                placeholder="Gender"
+                placeholder="Genêro"
+                id="gender"
             />
-            <label htmlFor="">Description</label>
+            <label htmlFor="description">Descrição</label>
             <input 
                 type="text"
-                placeholder="Description"
+                placeholder="Descrição"
+                id="description"
             />
-            <label htmlFor="">Image</label>
+            <label htmlFor="book">Livro</label>
             <input 
-                type="text"
-                placeholder="Image"
+                type="file"
+                id="book"
             />
-            <label htmlFor="">Author</label>
+            <label htmlFor="author">Autor</label>
             <input 
                 type="text"
-                placeholder="Author"
+                placeholder="Autor"
+                id="author"
             />
-            <label htmlFor="">Year</label>
+            <label htmlFor="year">Ano</label>
             <input 
                 type="text"
-                placeholder="Year"
+                placeholder="Ano"
+                id="year"
             />
 
-            <button type="button">Save</button>  
+            <button type="button">Salvar</button>  
             
         </Container>
     );
