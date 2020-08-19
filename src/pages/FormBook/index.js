@@ -15,44 +15,43 @@ export default function FormBook({ title, buttonName}) {
                 </Link>
             </div>
 
-            <label htmlFor="">Título</label>
+            <label htmlFor="title">Título</label>
             <input 
                 type="text"
-                placeholder="Título"
-                id=""
+                placeholder="Titulo"
+                id="title"
             />
-
-            <label htmlFor="">Gênero</label>
+            <label htmlFor="gender">Genêro</label>
             <input 
                 type="text"
-                placeholder="Gênero"
+                placeholder="Genêro"
+                id="gender"
             />
-
-            <label htmlFor="">Descrição</label>
+            <label htmlFor="description">Descrição</label>
             <input 
                 type="text"
                 placeholder="Descrição"
+                id="description"
             />
-
-            <label htmlFor="">Imagem</label>
+            <label htmlFor="book">Livro</label>
             <input 
-                type="text"
-                placeholder="Imagem"
+                type="file"
+                id="book"
             />
-
-            <label htmlFor="">Autor</label>
+            <label htmlFor="author">Autor</label>
             <input 
                 type="text"
                 placeholder="Autor"
+                id="author"
             />
-
-            <label htmlFor="">Ano de lançamento</label>
+            <label htmlFor="year">Ano</label>
             <input 
                 type="text"
-                placeholder="Ano de lançamento"
+                placeholder="Ano"
+                id="year"
             />
 
-            <button type="button">{buttonName}</button>  
+            <button type="button">{buttonName}</button>
             
         </Container>
     );
